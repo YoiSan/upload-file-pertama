@@ -1,0 +1,240 @@
+<!--
+  ~  Copyright © 2018-present, MNK Group. All rights reserved.
+  -->
+
+<resources>
+    <!-- Buttons margin. -->
+    <dimen name="button_small_margin">8dp</dimen>
+    <dimen name="button_large_margin">16dp</dimen>
+
+    <!-- Layout margin. -->
+    <dimen name="layout_small_margin">8dp</dimen>
+    <dimen name="layout_large_margin">16dp</dimen>
+
+    <!-- Padding. -->
+    <dimen name="layout_small_padding">4dp</dimen>
+    <dimen name="layout_medium_padding">8dp</dimen>
+    <dimen name="layout_large_padding">16dp</dimen>
+
+    <!-- Text size. -->
+    <dimen name="large_layout_textSize">24sp</dimen>
+    <dimen name="medium_layout_textSize">16sp</dimen>
+    <dimen name="small_layout_textSize">13sp</dimen>
+
+    <!-- Logo dimensions & margins. -->
+    <dimen name="logo_imageview_dimension">50dp</dimen>
+    <dimen name="logo_imageview_marginTop">32dp</dimen>
+
+    <!-- Spacing dimensions. -->
+    <dimen name="layout_verticalSpacing">16dp</dimen>
+
+    <!-- Container layout dimension. -->
+    <dimen name="layout_linearlayout_height">80dp</dimen>
+
+    <!-- Green button dimension & margins. -->
+    <dimen name="layout_small_greenButton_width">140dp</dimen>
+    <dimen name="layout_large_greenButton_width">348dp</dimen>
+    <dimen name="layout_greenButton_height">48dp</dimen>
+
+    <!-- Price view dimension & margins. -->
+    <dimen name="layout_price_width">140sp</dimen>
+    <dimen name="layout_price_height">48dp</dimen>
+
+    <!-- Toolbar dimensions & margins. -->
+    <dimen name="toolbar_layout_height">64dp</dimen>
+    <dimen name="toolbar_layout_button_dimension">32dp</dimen>
+    <dimen name="toolbar_layout_imageview_dimension">32dp</dimen>
+
+    <!-- Product details screen margins. -->
+    <dimen name="product_details_screen_layout_size_horizontalscrollview_height">66dp</dimen>
+    <dimen name="product_details_screen_layout_size_linearlayout_height">42dp</dimen>
+    <dimen name="product_details_screen_layout_numberpicker_width">130sp</dimen>
+    <dimen name="product_details_screen_layout_height">56dp</dimen>
+    <dimen name="product_details_screen_layout_button_dimension">35dp</dimen>
+    <dimen name="product_details_screen_layout_color_horizontalscrollview_height">40dp</dimen>
+    <dimen name="product_details_screen_layout_relativlayout_height">324dp</dimen>
+    <dimen name="product_details_screen_layout_relativlayout_marginTop">40dp</dimen>
+
+    <!-- Cart screen dimensions & margins. -->
+    <dimen name="cart_screen_layout_price_textview_margin">29dp</dimen>
+    <dimen name="cart_screen_layout_linearlayout_height">80dp</dimen>
+    <dimen name="cart_screen_layout_listview_height">450dp</dimen>
+
+    <!-- Promo space layout dimensions & margins. -->
+    <dimen name="promo_space_layout_blank_imageview_height">35dp</dimen>
+    <dimen name="promo_space_layout_promo_imageview_height">238dp</dimen>
+    <dimen name="promo_space_layout_filter_height">203dp</dimen>
+
+    <!--  Checkout screen layout dimensions & margins. -->
+    <dimen name="checkout_listview_item_height">64dp</dimen>
+
+
+    <!--  Settings & registration & payment & delivery screen layout dimensions & margins. -->
+    <dimen name="layout_small_width">50dp</dimen>
+    <dimen name="layout_intermediar_width">100dp</dimen>
+    <dimen name="layout_medium_width">160dp</dimen>
+    <dimen name="layout_large_width">220dp</dimen>
+    <dimen name="layout_data_picker_dimension">32dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!-- Filter layout dimens -->
+    <dimen name="filter_margin_medium">16dp</dimen>
+    <dimen name="filter_margin_small">10dp</dimen>
+    <dimen name="filter_divider">8dp</dimen>
+    <dimen name="filter_category_text_size">18sp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines - profile/logo image -->
+    <dimen name="profile_width">75dp</dimen>
+    <dimen name="profile_height">75dp</dimen>
+
+    <!--Widget dropdown button-->
+    <dimen name="dropdown_text_size">12sp</dimen>
+
+    <!--*** Widget product list item no pic CHECKOUT ***-->
+    <!--Linear Layout-->
+    <dimen name="widget_productlist_layout_height">55dp</dimen>
+    <dimen name="widget_productlist_layout_marginBottom">1dp</dimen>
+
+    <!--TextView checkoutNameProduct-->
+    <dimen name="widget_checkout_productName_width">0dp</dimen>
+    <dimen name="widget_checkout_productName_marginEnd">1dp</dimen>
+    <dimen name="widget_checkout_productName_marginRight">1dp</dimen>
+    <dimen name="widget_checkout_productName_padding">16dp</dimen>
+
+    <!--Relative Layout  + ImageView-->
+    <dimen name="widget_relative_layout_width">0dp</dimen>
+    <dimen name="widget_relative_layout_marginEnd">1dp</dimen>
+    <dimen name="widget_relative_layout_marginRight">1dp</dimen>
+    <dimen name="widget_color_imageview_width">20dp</dimen>
+    <dimen name="widget_color_imageview_height">20dp</dimen>
+
+    <!--TextView checkoutSizeProduct-->
+    <dimen name="widget_checkout_productSize_width">0dp</dimen>
+    <dimen name="widget_checkout_productSize_marginEnd">1dp</dimen>
+    <dimen name="widget_checkout_productSize_marginRight">1dp</dimen>
+
+    <!--TextView checkoutQuantityProduct-->
+    <dimen name="widget_checkout_productQuantity_width">0dp</dimen>
+    <dimen name="widget_checkout_productQuantity_marginEnd">1dp</dimen>
+    <dimen name="widget_checkout_productQuantity_marginRight">1dp</dimen>
+
+    <!--TextView checkoutPriceProduct-->
+    <dimen name="widget_checkout_productPrice_width">0dp</dimen>
+
+
+    <!--*** Widget product list GRIDVIEW ***-->
+    <!--RelativeLayout-->
+    <dimen name="widget_productList_mainGridview_height">200dp</dimen>
+    <dimen name="widget_productList_mainGridview_width">156dp</dimen>
+    <dimen name="widget_productList_mainGridview_marginEnd">8dp</dimen>
+    <dimen name="widget_productList_mainGridview_marginRight">8dp</dimen>
+    <dimen name="widget_productList_mainGridview_marginLeft">8dp</dimen>
+    <dimen name="widget_productList_mainGridview_marginStart">8dp</dimen>
+    <dimen name="widget_productList_mainGridview_marginTop">16dp</dimen>
+    <dimen name="widget_productList_mainGridview_marginBottom">16dp</dimen>
+    <dimen name="widget_productList_mainGridview_elevation">2dp</dimen>
+
+    <!--ImageView productImage-->
+    <dimen name="widget_productList_mainGridview_productImage_height">140dp</dimen>
+    <dimen name="widget_productList_mainGridview_productImage_padding">5dp</dimen>
+
+    <!--TextView productName-->
+    <dimen name="widget_productList_mainGridview_productName_marginEnd">8dp</dimen>
+    <dimen name="widget_productList_mainGridview_productName_marginRight">8dp</dimen>
+    <dimen name="widget_productList_mainGridview_productName_marginLeft">8dp</dimen>
+    <dimen name="widget_productList_mainGridview_productName_marginStart">8dp</dimen>
+    <dimen name="widget_productList_mainGridview_productName_marginTop">16dp</dimen>
+    <dimen name="widget_productList_mainGridview_productName_marginBottom">16dp</dimen>
+    <dimen name="widget_productList_mainGridview_productName_padding">4dp</dimen>
+    <dimen name="widget_productList_mainGridview_productName_textSize">16sp</dimen>
+
+    <!--LinearLayout with TextView and ImageViews-->
+    <dimen name="widget_productList_mainGridview_linear_paddingTop">4dp</dimen>
+    <dimen name="widget_productList_mainGridview_linear_padingBottom">8dp</dimen>
+
+    <!--TextView productPrice-->
+    <dimen name="widget_productList_mainGridview_productPrice_width">0dp</dimen>
+    <dimen name="widget_productList_mainGridview_productPrice_paddingLeft">8dp</dimen>
+    <dimen name="widget_productList_mainGridview_productPrice_paddingStart">8dp</dimen>
+    <dimen name="widget_productList_mainGridview_productPrice_paddingRight">8dp</dimen>
+    <dimen name="widget_productList_mainGridview_productPrice_paddingEnd">8dp</dimen>
+
+    <!--ImageView favorite-->
+    <dimen name="widget_productList_mainGridview_favorite_height">20dp</dimen>
+    <dimen name="widget_productList_mainGridview_favorite_width">20dp</dimen>
+
+    <!--ImageView cart-->
+    <dimen name="widget_productList_mainGridview_inCart_height">20dp</dimen>
+    <dimen name="widget_productList_mainGridview_inCart_width">20dp</dimen>
+
+
+    <!--Widget productList item CART-->
+    <!--RelativeLayout top-->
+    <dimen name="widget_cart_marginTop">4dp</dimen>
+    <!--TextView productName-->
+    <dimen name="widget_cart_name_padding">10dp</dimen>
+    <dimen name="widget_cart_name_textSize">14sp</dimen>
+
+    <!--TextView productSize-->
+    <dimen name="widget_cart_size_width">34dp</dimen>
+    <dimen name="widget_cart_size_height">34dp</dimen>
+    <dimen name="widget_cart_size_padding">3dp</dimen>
+    <dimen name="widget_cart_size_textSize">10sp</dimen>
+
+    <!--ImageView productImage-->
+    <dimen name="widget_cart_image_width">100dp</dimen>
+    <dimen name="widget_cart_image_height">100dp</dimen>
+    <dimen name="widget_cart_image_padding">8dp</dimen>
+
+    <!--Imageview productColor-->
+    <dimen name="widget_cart_color_width">34dp</dimen>
+    <dimen name="widget_cart_color_height">34dp</dimen>
+    <dimen name="widget_cart_color_margin">5dp</dimen>
+
+    <!--RelativeLayout bottom-->
+    <!--TextView productQuantity-->
+    <dimen name="widget_cart_quantity_width">125dp</dimen>
+    <dimen name="widget_cart_quantity_height">44dp</dimen>
+    <dimen name="widget_cart_quantity_textSize">12sp</dimen>
+
+    <!--TextView productPrice-->
+    <dimen name="widget_cart_price_width">125dp</dimen>
+    <dimen name="widget_cart_price_height">44dp</dimen>
+    <dimen name="widget_cart_price_textSize">12sp</dimen>
+    <!--ImageView cartbinImage-->
+    <dimen name="widget_cart_bin_marginRight">32dp</dimen>
+    <dimen name="widget_cart_bin_marginEnd">32dp</dimen>
+    <dimen name="widget_cart_bin_padding">8dp</dimen>
+
+
+    <!--Widget FILTER-->
+    <!--RelativeLayout-->
+    <dimen name="widget_filter_height">195dp</dimen>
+    <dimen name="widget_filter_paddingBottom">35dp</dimen>
+    <!--TextView gender-->
+    <dimen name="widget_filter_gender_marginTop">8dp</dimen>
+    <dimen name="widget_filter_gender_textSize">16sp</dimen>
+    <!--LinearLayout-->
+    <dimen name="widget_filter_textSize">16sp</dimen>
+    <!--TextView sort-->
+    <dimen name="widget_filter_sort_marginTop">4dp</dimen>
+
+
+    <!--Promo Space MainScreen-->
+    <!--ImageView promoImg-->
+    <dimen name="promo_image_height">238dp</dimen>
+    <dimen name="promo_widget_height">203dp</dimen>
+    <!--ImageView Blank-->
+    <dimen name="blank_image_height">35dp</dimen>
+
+    <dimen name="menuWidth">300dp</dimen>
+    <dimen name="menuImageHeight">180dp</dimen>
+
+</resources>
+

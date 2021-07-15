@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~  Copyright © 2018-present, MNK Group. All rights reserved.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/toolbar_layout_height"
+    android:background="@color/background_white"
+    android:orientation="vertical"
+    tools:ignore="GradleDependency">
+
+    <Button
+        android:id="@+id/favorites_back_button"
+        android:layout_width="@dimen/toolbar_layout_button_dimension"
+        android:layout_height="@dimen/toolbar_layout_button_dimension"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="@dimen/button_small_margin"
+        android:layout_marginLeft="@dimen/button_large_margin"
+        android:layout_marginStart="@dimen/button_large_margin"
+        android:layout_marginTop="@dimen/button_small_margin"
+        android:background="@drawable/ic_arrow_back_black" />
+
+    <android.support.v7.widget.SearchView
+        android:id="@+id/favorites_search_view"
+        style="@style/SearchViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/cart_layout"
+        android:layout_toStartOf="@id/cart_layout"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:iconifiedByDefault="true"
+        android:paddingLeft="@dimen/button_small_margin"
+        android:paddingStart="@dimen/button_small_margin" />
+
+    <TextView
+        android:id="@+id/favorites_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/layout_large_margin"
+        android:layout_marginStart="@dimen/layout_large_margin"
+        android:layout_toEndOf="@+id/favorites_back_button"
+        android:layout_toLeftOf="@+id/favorites_search_view"
+        android:layout_toRightOf="@+id/favorites_back_button"
+        android:layout_toStartOf="@+id/favorites_search_view"
+        android:text="@string/favorites_title"
+        android:textColor="@color/text_black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <FrameLayout
+        android:id="@+id/cart_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="@dimen/button_small_margin"
+        android:layout_marginRight="@dimen/button_small_margin">
+
+        <ImageView
+            android:id="@+id/favorites_cart_button"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/button_large_margin"
+            android:layout_marginRight="@dimen/button_large_margin"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_shopping_cart_black" />
+
+
+        <RelativeLayout
+            android:id="@+id/products_quantity_shape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|top"
+            android:layout_marginEnd="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round_red_shape"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/products_inside_cart_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="20"
+                android:textColor="@color/background_white" />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+
+</RelativeLayout>

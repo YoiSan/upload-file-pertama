@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~  Copyright © 2018-present, MNK Group. All rights reserved.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/checkout_listview_item_height"
+    android:orientation="horizontal"
+    android:weightSum="10">
+
+    <TextView
+        android:id="@+id/checkout_product_name"
+        android:layout_width="@dimen/widget_checkout_productName_width"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="@dimen/widget_checkout_productName_marginEnd"
+        android:layout_marginRight="@dimen/widget_checkout_productName_marginRight"
+        android:layout_weight="4"
+        android:background="@color/background_white"
+        android:gravity="start|center_vertical"
+        android:padding="@dimen/widget_checkout_productName_padding"
+        android:text="@string/product_checkout_textview_product_name"
+        android:textColor="@android:color/black" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.25"
+        android:gravity="center"
+        android:layout_marginRight="@dimen/widget_relative_layout_marginRight"
+        android:layout_marginEnd="@dimen/widget_relative_layout_marginEnd"
+        android:background="@color/background_white">
+
+        <ImageView
+            android:id="@+id/checkout_product_color"
+            android:layout_width="@dimen/widget_color_imageview_width"
+            android:layout_height="@dimen/widget_color_imageview_height"
+            android:contentDescription="@null"
+            android:background="@color/text_black" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/checkout_product_size"
+        android:layout_width="@dimen/widget_checkout_productSize_width"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="@dimen/widget_checkout_productSize_marginEnd"
+        android:layout_marginRight="@dimen/widget_checkout_productSize_marginRight"
+        android:background="@color/background_white"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="@string/product_checkout_textview_product_size"
+        android:textColor="@color/material_drawer_dark_selected"
+        android:layout_weight="1.25"/>
+
+    <TextView
+        android:id="@+id/checkout_product_quantity"
+        android:layout_width="@dimen/widget_checkout_productName_width"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="@dimen/widget_checkout_productQuantity_marginEnd"
+        android:layout_marginRight="@dimen/widget_checkout_productQuantity_marginRight"
+        android:background="@color/background_white"
+        android:gravity="center"
+        android:text="@string/product_checkout_textview_product_quantity"
+        android:layout_weight="1.25"
+        android:textColor="@color/material_drawer_dark_selected" />
+
+    <TextView
+        android:id="@+id/checkout_product_price"
+        android:layout_width="@dimen/widget_checkout_productPrice_width"
+        android:layout_height="match_parent"
+        android:layout_weight="2.25"
+        android:background="@color/background_white"
+        android:gravity="center"
+        android:text="@string/product_checkout_textview_product_price"
+        android:textStyle="bold"
+        android:textColor="@android:color/black" />
+
+</LinearLayout>

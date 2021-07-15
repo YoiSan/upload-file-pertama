@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~  Copyright © 2018-present, MNK Group. All rights reserved.
+  -->
+
+<resources>
+
+    <!-- Cart screen color. -->
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="purple">#d580ff</color>
+    <color name="red">#ff0000</color>
+    <color name="colorGreen">#2cdca0</color>
+    <color name="colorAlphaGreen">#4b2cdca0</color>
+    <color name="colorGreenDark">#21c58d</color>
+    <color name="colorPink">#a883b9</color>
+    <color name="colorAlphaPurple">#55a883b9</color>
+    <color name="colorPinkDark">#996dad</color>
+    <color name="testWhite">#FFFFFF</color>
+    <color name="trans">#0000</color>
+    <color name="black">#000000</color>
+    <color name="pickNumberGrey">#FFB6B8BF</color>
+    <color name="settingsBackgroundColor">#f4f4f4</color>
+
+    <!-- Backgrounds -->
+    <color name="background_white">#ffffffff</color>
+    <color name="background_black">#000000</color>
+    <color name="background_f5_grey">#f5f5f5</color>
+    <color name="background_fc_grey">#fcfcfc</color>
+    <color name="background_e8_grey">#FFB6B8BF</color>
+    <color name="background_transparent">#0000</color>
+    <!-- Text -->
+    <color name="text_black">#ff000000</color>
+
+    <color name="text_medium_grey">#b7c1c6</color>
+    <color name="text_darker_gray">#aaa</color>
+
+    <color name="text_white">#FFFFFF</color>
+
+    <color name="hint_disabled_grey">#bfbfbf</color>
+    <color name="hint_enabled_color_grey">#808080</color>
+    <!-- Favorite / InCart buttons -->
+    <color name="favorite_enabled">#ff6e6e</color>
+    <color name="favorite_disabled">#dce5e2</color>
+    <color name="cart_enabled">#2cdca0</color>
+    <color name="cart_disabled">#dce5e2</color>
+    <!-- Nav buttons -->
+    <color name="navigation_buttons_green">#2cdca0</color>
+    <color name="navigation_buttons_green_pressed">#27c690</color>
+    <color name="navigation_buttons_green_pressed_alpha">#6827c690</color>
+    <color name="navigation_buttons_violet">#a883b9</color>
+    <color name="navigation_buttons_violet_pressed">#7a50a7</color>
+
+
+    <!-- Material DEFAULT colors -->
+    <color name="material_drawer_primary">#2196F3</color>
+    <color name="material_drawer_primary_dark">#1976D2</color>
+    <color name="material_drawer_primary_light">#BBDEFB</color>
+    <color name="material_drawer_accent">#FF4081</color>
+
+    <!-- OVERWRITE THESE COLORS FOR A LIGHT THEME -->
+    <!-- MaterialDrawer DEFAULT colors -->
+    <color name="material_drawer_background">#f9f9f9</color>
+    <!-- Material DEFAULT text / items colors -->
+    <color name="material_drawer_primary_text">#DE000000</color>
+    <color name="material_drawer_primary_icon">#8A000000</color>
+    <color name="material_drawer_secondary_text">#8A000000</color>
+    <color name="material_drawer_hint_text">#42000000</color>
+    <color name="material_drawer_divider">#1F000000</color>
+    <!-- Material DEFAULT drawer colors -->
+    <color name="material_drawer_selected">#F9F9F9</color>
+    <color name="material_drawer_selected_text">#DE000000</color>
+    <color name="material_drawer_header_selection_text">#FFF</color>
+
+    <!-- OVERWRITE THESE COLORS FOR A DARK THEME -->
+    <!-- MaterialDrawer DEFAULT DARK colors -->
+    <color name="material_drawer_dark_background">#303030</color>
+    <!-- MaterialDrawer DEFAULT DARK text / items colors -->
+    <color name="material_drawer_dark_primary_text">#DEFFFFFF</color>
+    <color name="material_drawer_dark_primary_icon">#8AFFFFFF</color>
+    <color name="material_drawer_dark_secondary_text">#8AFFFFFF</color>
+    <color name="material_drawer_dark_hint_text">#42FFFFFF</color>
+    <color name="material_drawer_dark_divider">#1FFFFFFF</color>
+    <!-- MaterialDrawer DEFAULT DARK drawer colors -->
+    <color name="material_drawer_dark_selected">#9a9a9a</color>
+    <color name="material_drawer_dark_selected_text">@color/material_drawer_primary</color>
+    <color name="material_drawer_dark_header_selection_text">#FFF</color>
+
+</resources>

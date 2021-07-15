@@ -1,0 +1,176 @@
+<!--
+  ~ Copyright © 2018-present, MNK Group. All rights reserved.
+  -->
+
+<resources>
+    <!-- Override this string's value if you want to change
+    the app's name that is shown in the springboard of the
+    device and any other places where it is shown. -->
+    <string name="app_name">IvoryShop</string>
+
+    <!-- Title of the Filter option -->
+    <string name="title_gender">Gender:</string>
+    <!-- Titles of the Filter action buttons -->
+    <string name="filter_kids">Kids</string>
+    <string name="filter_women">Women</string>
+    <string name="filter_men">Men</string>
+    <string name="filter_all">All</string>
+
+    <!-- Title of the Sort option -->
+    <string name="title_sort_by">Sort by:</string>
+    <!-- Titles of the Sort action buttons -->
+    <string name="filter_newest">Newest</string>
+    <string name="filter_oldest">Oldest</string>
+    <string name="filter_price">Price</string>
+
+    <!-- Top Menu labels -->
+    <string name="menu_clothes">Clothes</string>
+    <string name="menu_shoes">Shoes</string>
+    <string name="menu_other">Other</string>
+
+    <!-- Navigation Drawer menu labels -->
+    <string name="nav_home">Home</string>
+    <string name="nav_favorites">Favorites</string>
+    <string name="nav_cart">Cart</string>
+    <string name="nav_settings">Settings</string>
+    <string name="action_logout">Log Out</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="create_new_account">Create new account</string>
+
+    <string name="grid_view_items_textview_product_name">bijgrsijgrjugrs</string>
+    <string name="grid_view_items_textview_product_price">$49.99</string>
+    <string name="product_checkout_textview_product_name">name</string>
+    <string name="product_checkout_textview_product_size">M</string>
+    <string name="product_checkout_textview_product_quantity">1</string>
+    <string name="product_checkout_textview_product_price">price</string>
+
+    <!-- Alert buttons string resources -->
+    <string name="button_ok">OK</string>
+    <string name="button_yes">Yes</string>
+    <string name="button_no">No</string>
+
+    <!-- Error messages string resources -->
+    <string name="invalid_username">User does not exist!</string>
+    <string name="phone_no_length_constraint_error_msg">Phone number needs to be 10 digits long.</string>
+    <string name="phone_special_chars_error_msg">Cannot contain special characters</string>
+    <string name="single_incomplete_field_error_msg">Field must not be empty.</string>
+    <string name="card_holder_completion_hint">This field has only letters and/or spaces</string>
+    <string name="card_invalid_number_error_msg">Wrong number!</string>
+    <string name="card_invalid_csv_error_msg">Wrong CSV!</string>
+    <string name="card_invalid_date_error_msg">Invalid date!</string>
+    <string name="card_invalid_card_holder_error_msg">Please insert a valid card productsHolder</string>
+    <string name="select_size_msg">Please select a size first!</string>
+    <string name="max_quantity_exceeded_error_msg">You\'ve reached the maximum number of products.</string>
+    <string name="stock_consumed_error_msg">Product out of stock.</string>
+    <string name="alert_passwords_don_t_match">Passwords don\'t match</string>
+    <string name="wrong_pass_error_msg">Wrong password</string>
+    <string name="email_not_used_error_msg">Please enter a valid email</string>
+    <string name="password_constraint_msg">The password needs to be minimum 8 characters long and it must contain uppercase letters, lowercase letters and digits</string>
+    <string name="invalid_input">Invalid input</string>
+    <string name="connect_to_see_favorites">You have to be connected to see favorite products.</string>
+    <string name="connect_to_see_settings">You have to be connected to change settings.</string>
+    <string name="order_placed_successfully">Order placed successfully</string>
+    <string name="email_reset_successful_msg">An email has been sent to %1$s</string>
+    <string name="cart_item_added_msg">Product added to cart</string>
+    <string name="alert_cart_is_empty">Cart is empty.</string>
+    <string name="alert_invalid_coupon_code">Invalid coupon code.</string>
+
+    <string name="error_sending_request">Error sending request.</string>
+    <string name="could_not_load_data">Could not load data. Please try again later.</string>
+    <string name="invalid_user_input">Invalid email / password</string>
+    <string name="error_parsing_response">Error parsing response:</string>
+
+    <!-- Unknown errors string resource -->
+    <string name="unknown_error_msg">An error occurred.</string>
+
+
+
+    <!-- Other constant strings -->
+    <string name="terms_and_conditions_rss_feed_url">rss.url</string>
+    <string name="coupon_1">012345</string>
+    <string name="coupon_2">56789</string>
+
+    <!-- Server-related string resources -->
+    <string name="transaction_currency">usd</string>
+
+    <!-- Common Strings -->
+    <string name="dollar_currency_string">$</string>
+    <string name="sale_dollar">-$</string>
+    <string name="country_hint">Country</string>
+    <string name="district_hint">District</string>
+    <string name="city_hint">City</string>
+    <string name="street_hint">Street</string>
+    <string name="phone_number_hint">Phone number</string>
+    <string name="email_address_hint">Email address</string>
+    <string name="last_name_hint">Last name</string>
+    <string name="first_name_hint">First name</string>
+    <string name="street_number_hint">Number</string>
+    <string name="zip_hint">ZIP</string>
+    <string name="card_holder_name">Card Holder Name</string>
+    <string name="delivery_details">Delivery details</string>
+    <string name="card_nr_hint">1234567890</string>
+    <string name="csv_hint">CVS</string>
+    <string name="exp_date">Exp. Date:</string>
+    <string name="mm_yy">MM/YY</string>
+    <string name="password_hint">Password</string>
+    <string name="confirm_password_hint">Confirm Password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+
+
+    <!-- Delivery Strings -->
+    <string name="delivery_screen_textview_choose_different_recipient">Choose different recipient</string>
+    <string name="continue_to_payment">Continue to Payment</string>
+
+    <!-- Payment Strings -->
+    <string name="settings_screen_button_save">Save</string>
+    <string name="card_details">Card details</string>
+    <string name="pay_with_stripe">Pay with Stripe</string>
+    <string name="pay_with_paypal">Pay with PayPal</string>
+    <string name="place_order">Place Order</string>
+    <string name="i_d_like_to_pay_on_delivery">I\'d like to pay on delivery</string>
+    <string name="alert_all_fields_are_required">All fields are required!</string>
+    <string name="alert_terms_and_conditions">You must agree with Terms and Conditions!</string>
+    <string name="alert_error_validating_card">Error validating card</string>
+    <string name="alert_please_enter_valid_card">Please enter a valid card.</string>
+    <string name="alert_expire_date">Expire date cannot be empty</string>
+    <string name="user_not_logged_in">User not logged in</string>
+    <string name="are_you_sure_you_want_to_logout">Are you sure you want to logout?</string>
+    <string name="option_not_available_for_demo">This option is not available in DEMO mode.</string>
+    <string name="please_complete_all_fields">Please complete all fields.</string>
+    <string name="could_not_remove_item">Could not remove item</string>
+
+    <!-- SignIn Strings-->
+    <string name="skip">Skip</string>
+
+    <!-- Login Strings-->
+    <string name="forgot_password">Forgot password?</string>
+
+    <!-- Register Strings-->
+    <string name="accept_terms_and_conditions_string"><![CDATA[I accept the Terms & Conditions]]></string>
+
+    <!-- Password Recovery Strings-->
+    <string name="recover">Recover</string>
+
+    <!-- Product Details Strings -->
+    <string name="details">Details</string>
+    <string name="item_price">$00.00</string>
+    <string name="add_to_cart">Add to Cart</string>
+
+    <!-- Cart Activity Strings -->
+    <string name="your_total">Your total:</string>
+    <string name="checkout_button_text">Checkout</string>
+
+    <!-- Checkout Strings-->
+    <string name="product">Product</string>
+    <string name="color">Color</string>
+    <string name="size">Size</string>
+    <string name="qty">Qty</string>
+    <string name="continue_to_delivery_details">Continue to Delivery Details</string>
+    <string name="checkout_price">CHECKOUT PRICE:</string>
+    <string name="cart_price">Cart Price:</string>
+    <string name="discount">Discount:</string>
+    <string name="coupon">Coupon:</string>
+    <string name="coupon_code">Coupon Code</string>
+    <string name="discount_in_currency">-$ 0.0</string>
+</resources>

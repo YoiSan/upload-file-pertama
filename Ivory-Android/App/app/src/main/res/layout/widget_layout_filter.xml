@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~  Copyright © 2018-present, MNK Group. All rights reserved.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/filters_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="36dp"
+    android:background="@color/background_f5_grey">
+
+    <TextView
+        android:id="@+id/gender_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/filter_margin_medium"
+        android:layout_marginStart="@dimen/filter_margin_medium"
+        android:layout_marginTop="@dimen/layout_small_margin"
+        android:text="@string/title_gender"
+        android:layout_marginBottom="@dimen/layout_small_margin"
+        android:textColor="@android:color/black"
+        android:textSize="13sp" />
+
+    <LinearLayout
+        android:id="@+id/gender_container_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gender_text_view"
+        android:background="@color/background_fc_grey"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <Button
+            android:id="@+id/allBtnId"
+            style="?attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="@string/filter_all"
+            android:textAllCaps="false"
+            android:textColor="@color/text_darker_gray"/>
+
+        <Button
+            android:id="@+id/menBtnId"
+            style="?attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="@string/filter_men"
+            android:textAllCaps="false"
+            android:textColor="@color/text_darker_gray" />
+
+        <Button
+            android:id="@+id/womenBtnId"
+            style="?attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="@string/filter_women"
+            android:textAllCaps="false"
+            android:textColor="@color/text_darker_gray"/>
+
+        <Button
+            android:id="@+id/kidsBtnId"
+            style="?attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="@string/filter_kids"
+            android:textAllCaps="false"
+            android:textColor="@color/text_darker_gray" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/sort_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gender_container_linear_layout"
+        android:layout_marginLeft="@dimen/filter_margin_medium"
+        android:layout_marginStart="@dimen/filter_margin_medium"
+        android:layout_marginTop="@dimen/layout_small_margin"
+        android:text="@string/title_sort_by"
+        android:layout_marginBottom="@dimen/layout_small_margin"
+        android:textColor="@android:color/black"
+        android:textSize="13sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sort_text_view"
+        android:background="@color/background_fc_grey"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+
+        <Button
+            android:id="@+id/newestBtnId"
+            style="?attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="@string/filter_newest"
+            android:textAllCaps="false"
+            android:textColor="@color/text_darker_gray" />
+
+        <Button
+            android:id="@+id/oldestBtnId"
+            style="?attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="@string/filter_oldest"
+            android:textAllCaps="false"
+            android:textColor="@color/text_darker_gray"/>
+
+        <Button
+            android:id="@+id/priceUpBtnId"
+            style="?attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:drawableEnd="@drawable/ic_expand_less_grey"
+            android:drawableRight="@drawable/ic_expand_less_grey"
+            android:text="@string/filter_price"
+            android:textAllCaps="false"
+            android:textColor="@color/text_darker_gray" />
+
+        <Button
+            android:id="@+id/priceDownBtnId"
+            style="?attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:drawableEnd="@drawable/ic_expand_more_grey"
+            android:drawableRight="@drawable/ic_expand_more_grey"
+            android:text="@string/filter_price"
+            android:textAllCaps="false"
+            android:textColor="@color/text_darker_gray"/>
+    </LinearLayout>
+
+</RelativeLayout>

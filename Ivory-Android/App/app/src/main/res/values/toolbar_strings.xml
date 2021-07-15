@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~  Copyright © 2018-present, MNK Group. All rights reserved.
+  -->
+
+<resources>
+    <!-- Toolbar strings across the app -->
+    <!-- If you need to change the text displayed in the -->
+    <!--toolbar of a screen, feel free to override the string used -->
+    <!--for the needed ID. -->
+
+    <!-- Cart Screen Toolbar -->
+    <string name="your_cart_title">Your Cart</string>
+    <!-- Checkout Screen Toolbar -->
+    <string name="checkout_title">Checkout</string>
+    <!-- Delivery Screen Toolbar -->
+    <string name="delivery_title">Delivery</string>
+    <!-- Favorites Screen Toolbar -->
+    <string name="favorites_title">Favorites</string>
+    <!-- Terms & Conditions Toolbar -->
+    <string name="legal_title">Legal</string>
+    <!-- Forgot Password Screen Toolbar -->
+    <string name="password_recovery_title">Password Recovery</string>
+    <!-- Payment Screen Toolbar -->
+    <string name="payment_title">Payment</string>
+    <!-- Register / Sign-up Screen Toolbar -->
+    <string name="register_title">Register</string>
+    <!-- Settings Screen Toolbar -->
+    <string name="settings_title">Settings</string>
+    <!-- Login / Sign-in Screen Toolbar -->
+    <string name="login_title">Login</string>
+    <!-- Search Screen Toolbar -->
+    <string name="search_product_hint">Search product</string>
+</resources>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~  Copyright © 2018-present, MNK Group. All rights reserved.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background_white"
+    tools:context="com.themedimension.ivoryshop.android.activities.fragmentActivities.FavoritesActivity">
+
+    <include
+        android:id="@+id/favourites_toolbar"
+        layout="@layout/toolbar_layout_favorites" />
+
+    <LinearLayout
+        android:id="@+id/tab_toolbar_favourites"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/favourites_toolbar"
+        android:visibility="visible"
+        android:weightSum="4">
+
+        <Button
+            android:id="@+id/favourites_all_products"
+            style="?attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/background_white"
+            android:text="@string/filter_all"
+            android:textAllCaps="false"
+            android:textColor="@color/text_darker_gray"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/favourites_clothes"
+            style="?attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/background_white"
+            android:text="@string/menu_clothes"
+            android:textAllCaps="false"
+            android:textColor="@color/text_darker_gray"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/favourites_shoes"
+            style="?attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/background_white"
+            android:text="@string/menu_shoes"
+            android:textAllCaps="false"
+            android:textColor="@color/text_darker_gray"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/favourites_other"
+            style="?attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/background_white"
+            android:text="@string/menu_other"
+            android:textAllCaps="false"
+            android:textColor="@color/text_darker_gray"
+            tools:ignore="ButtonStyle" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/favorites_frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tab_toolbar_favourites" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/favorites_filter_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/layout_large_margin"
+        android:layout_marginEnd="@dimen/layout_large_margin"
+        android:layout_marginRight="@dimen/layout_large_margin"
+        app:backgroundTint="@color/colorGreen"
+        android:src="@drawable/ic_filters_white"
+        android:visibility="gone" />
+
+</RelativeLayout>

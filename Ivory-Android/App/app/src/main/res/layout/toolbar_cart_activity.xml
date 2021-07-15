@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@android:color/background_light"
+    android:layout_height="48dp"
+    card_view:cardElevation="10dp"
+    app:cardCornerRadius="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/cart_toolbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/layout_large_margin"
+        android:layout_marginLeft="@dimen/layout_large_margin"
+        android:layout_marginRight="@dimen/layout_large_margin"
+        android:layout_marginStart="@dimen/layout_large_margin"
+        android:text="@string/your_cart_title"
+        android:layout_toEndOf="@+id/cart_toolbar_back_button"
+        android:layout_toRightOf="@+id/cart_toolbar_back_button"
+        android:layout_centerVertical="true"
+        android:textColor="@color/text_black"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/cart_toolbar_back_button"
+        android:layout_width="@dimen/toolbar_layout_button_dimension"
+        android:layout_height="@dimen/toolbar_layout_button_dimension"
+        android:layout_marginBottom="@dimen/button_small_margin"
+        android:layout_marginLeft="@dimen/button_large_margin"
+        android:layout_marginStart="@dimen/button_large_margin"
+        android:layout_marginTop="@dimen/button_small_margin"
+        android:background="@drawable/ic_arrow_back_black"
+        android:layout_centerVertical="true"/>
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

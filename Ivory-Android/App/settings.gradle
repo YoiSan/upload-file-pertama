@@ -1,0 +1,5 @@
+/*
+ * Copyright © 2018-present, MNK Group. All rights reserved.
+ */
+
+include ':app'

@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~  Copyright © 2018-present, MNK Group. All rights reserved.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/settingsBackgroundColor"
+    android:id="@+id/activity_settings_screen"
+    android:focusableInTouchMode="true"
+    android:descendantFocusability="beforeDescendants"
+    tools:context="com.themedimension.ivoryshop.android.activities.fragmentActivities.FavoritesActivity">
+
+
+    <include
+        android:id="@+id/settings_toolbar"
+        layout="@layout/toolbar_cart_activity"
+        android:visibility="visible"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/settings_toolbar"
+        android:layout_above="@+id/buttonLayout">
+
+        <ScrollView
+            android:id="@+id/settingsScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginLeft="22dp"
+                    android:text="@string/delivery_details"
+                    android:textStyle="bold"
+                    android:textColor="@color/material_drawer_primary_icon"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/background_white"
+                    android:paddingStart="@dimen/layout_large_margin"
+                    android:paddingLeft="@dimen/layout_large_margin"
+                    android:paddingEnd="@dimen/layout_large_margin"
+                    android:orientation="vertical"
+                    android:paddingRight="@dimen/layout_large_margin">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/layout_large_margin"
+                        android:weightSum="2">
+
+                        <EditText
+                            android:id="@+id/settings_first_name"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="4dp"
+                            android:layout_marginRight="4dp"
+                            android:ems="10"
+                            android:backgroundTint="@android:color/background_dark"
+                            android:nextFocusDown="@+id/settings_last_name"
+                            android:hint="@string/first_name_hint"
+                            android:textColor="@color/text_black"
+                            android:textColorHint="@android:color/darker_gray"
+                            android:inputType="textCapWords"/>
+
+                        <EditText
+                            android:id="@+id/settings_last_name"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginLeft="4dp"
+                            android:backgroundTint="@android:color/background_dark"
+                            android:nextFocusDown="@+id/settings_email_address"
+                            android:hint="@string/last_name_hint"
+                            android:textColor="@color/text_black"
+                            android:inputType="textCapWords"
+                            android:textColorHint="@android:color/darker_gray" />
+
+                    </LinearLayout>
+
+
+
+                    <EditText
+                        android:id="@+id/settings_email_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@android:color/background_dark"
+                        android:nextFocusDown="@+id/settings_phone_nr"
+                        android:hint="@string/email_address_hint"
+                        android:alpha="0.4"
+                        android:ellipsize="end"
+                        android:textColor="@color/text_black"
+                        android:inputType="textEmailAddress"
+                        android:textColorHint="@android:color/darker_gray" />
+
+                    <EditText
+                        android:id="@+id/settings_phone_nr"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@android:color/background_dark"
+                        android:ems="10"
+                        android:maxLength="10"
+                        android:hint="@string/phone_number_hint"
+                        android:textColor="@color/text_black"
+                        android:nextFocusDown="@+id/settings_street"
+                        android:inputType="phone"
+                        android:textColorHint="@android:color/darker_gray" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/layout_large_margin"
+                        android:weightSum="2">
+
+                        <EditText
+                            android:id="@+id/settings_street"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:backgroundTint="@android:color/background_dark"
+                            android:hint="@string/street_hint"
+                            android:ems="10"
+                            android:ellipsize="end"
+                            android:textColor="@color/text_black"
+                            android:nextFocusDown="@+id/number_editText"
+                            android:inputType="textCapWords"
+                            android:textColorHint="@android:color/darker_gray" />
+
+                        <EditText
+                            android:id="@+id/number_editText"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:backgroundTint="@android:color/background_dark"
+                            android:ems="10"
+                            android:maxLength="5"
+                            android:hint="@string/street_number_hint"
+                            android:ellipsize="end"
+                            android:textColor="@color/text_black"
+                            android:nextFocusDown="@+id/city_editText"
+                            android:inputType="number"
+                            android:textColorHint="@android:color/darker_gray" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <EditText
+                            android:id="@+id/city_editText"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:backgroundTint="@android:color/background_dark"
+                            android:ems="10"
+                            android:hint="@string/city_hint"
+                            android:maxLength="163"
+                            android:textColor="@color/text_black"
+                            android:nextFocusDown="@+id/zip_editText"
+                            android:inputType="textCapWords"
+                            android:textColorHint="@android:color/darker_gray" />
+
+                        <EditText
+                            android:id="@+id/zip_editText"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:backgroundTint="@android:color/background_dark"
+                            android:ems="10"
+                            android:maxLength="10"
+                            android:hint="@string/zip_hint"
+                            android:textColor="@color/text_black"
+                            android:nextFocusDown="@+id/district_editText"
+                            android:inputType="textPostalAddress"
+                            android:textColorHint="@android:color/darker_gray" />
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:layout_marginBottom="@dimen/layout_large_margin">
+
+                        <EditText
+                            android:id="@+id/district_editText"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="4dp"
+                            android:layout_marginRight="4dp"
+                            android:backgroundTint="@android:color/background_dark"
+                            android:ems="10"
+                            android:hint="@string/district_hint"
+                            android:textColor="@color/text_black"
+                            android:nextFocusDown="@+id/country_editText"
+                            android:inputType="textCapWords"
+                            android:textColorHint="@android:color/darker_gray" />
+
+                        <EditText
+                            android:id="@+id/country_editText"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginLeft="4dp"
+                            android:backgroundTint="@android:color/background_dark"
+                            android:ems="10"
+                            android:maxLength="70"
+                            android:hint="@string/country_hint"
+                            android:textColor="@color/text_black"
+                            android:nextFocusDown="@+id/settings_card_nr"
+                            android:inputType="textCapWords"
+                            android:textColorHint="@android:color/darker_gray" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginStart="22dp"-->
+                    <!--android:layout_marginLeft="22dp"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:layout_marginBottom="10dp"-->
+                    <!--android:text="@string/card_details"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:textColor="@color/material_drawer_primary_icon"-->
+                    <!--android:visibility="gone"-->
+                    <!--android:textSize="14sp"/>-->
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/cardDetailsLayout"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:background="@color/background_white"-->
+                    <!--android:paddingLeft="@dimen/layout_large_margin"-->
+                    <!--android:paddingRight="@dimen/layout_large_margin"-->
+                    <!--android:visibility="gone"-->
+                    <!--&gt;-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:weightSum="2"-->
+                        <!--android:layout_marginTop="@dimen/layout_large_margin"-->
+                        <!--android:orientation="horizontal">-->
+
+                        <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:layout_width="0dp"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:orientation="horizontal"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:layout_weight="1.1"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:layout_marginRight="4dp"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:layout_marginEnd="4dp"&ndash;&gt;-->
+                            <!--&lt;!&ndash;&gt;&ndash;&gt;-->
+
+                            <!--<EditText-->
+                                <!--android:id="@+id/settings_card_nr"-->
+                                <!--android:layout_width="0dp"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_weight="0.8"-->
+                                <!--android:backgroundTint="@android:color/background_dark"-->
+                                <!--android:hint="@string/card_nr_hint"-->
+                                <!--android:textColor="@color/text_black"-->
+                                <!--android:layout_gravity="center_vertical"-->
+                                <!--android:nextFocusDown="@+id/settings_CVS"-->
+                                <!--android:scrollbars="horizontal"-->
+                                <!--android:inputType="number"-->
+                                <!--android:maxLines="1"-->
+                                <!--android:ellipsize="end"-->
+                                <!--android:maxLength="16"-->
+                                <!--android:textColorHint="@android:color/darker_gray" />-->
+
+                            <!--<EditText-->
+                                <!--android:id="@+id/settings_CVS"-->
+                                <!--android:layout_width="0dp"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_weight="0.3"-->
+                                <!--android:layout_gravity="center_vertical"-->
+                                <!--android:backgroundTint="@android:color/background_dark"-->
+                                <!--android:ellipsize="end"-->
+                                <!--android:hint="@string/csv_hint"-->
+                                <!--android:maxLines="1"-->
+                                <!--android:maxLength="4"-->
+                                <!--android:textColor="@color/text_black"-->
+                                <!--android:nextFocusDown="@+id/settings_exp_date"-->
+                                <!--android:inputType="number"-->
+                                <!--android:textColorHint="@android:color/darker_gray" />-->
+
+                        <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+
+                        <!--<RelativeLayout-->
+                            <!--android:layout_width="0dp"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_weight="0.9"-->
+                            <!--android:layout_marginLeft="4dp"-->
+                            <!--android:layout_marginStart="4dp"-->
+                            <!--&gt;-->
+
+                            <!--<TextView-->
+                                <!--android:id="@+id/settings_exp_date_label"-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_centerVertical="true"-->
+                                <!--android:layout_alignParentStart="true"-->
+                                <!--android:layout_alignParentLeft="true"-->
+                                <!--android:text="@string/exp_date"-->
+                                <!--android:textSize="16sp"-->
+                                <!--android:textColor="@color/black" />-->
+
+
+                            <!--<EditText-->
+                                <!--android:id="@+id/settings_exp_date"-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_toRightOf="@+id/settings_exp_date_label"-->
+                                <!--android:layout_toLeftOf="@+id/settings_calendar_icon"-->
+                                <!--android:backgroundTint="@android:color/background_dark"-->
+                                <!--android:ellipsize="end"-->
+                                <!--android:maxLines="1"-->
+                                <!--android:hint="@string/mm_yy"-->
+                                <!--android:textColor="@color/text_black"-->
+                                <!--android:inputType="date"-->
+                                <!--android:textColorHint="@android:color/darker_gray" />-->
+
+
+                            <!--<ImageView-->
+                                <!--android:id="@+id/settings_calendar_icon"-->
+                                <!--android:contentDescription="@null"-->
+                                <!--android:layout_centerVertical="true"-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_alignParentEnd="true"-->
+                                <!--android:layout_alignParentRight="true"-->
+                                <!--android:src="@drawable/ic_date_black"/>-->
+
+                        <!--</RelativeLayout>-->
+
+
+
+                    <!--</LinearLayout>-->
+
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/settings_card_holder_name"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:backgroundTint="@android:color/background_dark"-->
+                        <!--android:hint="@string/card_holder_name"-->
+                        <!--android:inputType="textCapWords"-->
+                        <!--android:textColor="@color/text_black"-->
+                        <!--android:textColorHint="@android:color/darker_gray" />-->
+
+                <!--</LinearLayout>-->
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/layout_large_margin"
+        android:background="@color/background_white"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            style="?attr/buttonBarButtonStyle"
+            android:id="@+id/save_button_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/green_button_selector"
+            android:textAllCaps="false"
+            android:textColor="@color/background_white"
+            android:text="@string/settings_screen_button_save"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

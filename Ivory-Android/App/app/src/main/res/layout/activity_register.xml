@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright © 2018-present, MNK Group. All rights reserved.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:background="@color/background_white">
+
+    <include
+        android:id="@+id/register_toolbar"
+        layout="@layout/simple_toolbar_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/register_toolbar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_large_margin"
+            android:layout_marginRight="@dimen/layout_large_margin"
+            android:layout_marginBottom="@dimen/layout_large_margin">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <EditText
+                        android:id="@+id/register_first_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/navigation_buttons_violet"
+                        android:ems="10"
+                        android:hint="@string/first_name_hint"
+                        android:inputType="textCapWords"
+                        android:nextFocusDown="@+id/register_last_name"
+                        android:textColor="@color/text_black"
+                        android:textColorHint="@color/text_medium_grey"
+                        android:textSize="@dimen/medium_layout_textSize" />
+
+                    <EditText
+                        android:id="@+id/register_last_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/navigation_buttons_violet"
+                        android:ems="10"
+                        android:hint="@string/last_name_hint"
+                        android:inputType="textCapWords"
+                        android:nextFocusDown="@+id/register_email"
+                        android:textColor="@color/text_black"
+                        android:textColorHint="@color/text_medium_grey"
+                        android:textSize="@dimen/medium_layout_textSize" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/register_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/layout_small_margin"
+                    android:backgroundTint="@color/navigation_buttons_violet"
+                    android:ems="10"
+                    android:hint="@string/email_address_hint"
+                    android:inputType="textEmailAddress"
+                    android:nextFocusDown="@+id/register_phone_number"
+                    android:textColor="@color/text_black"
+                    android:textColorHint="@color/text_medium_grey"
+                    android:textSize="@dimen/medium_layout_textSize" />
+
+                <EditText
+                    android:id="@+id/register_phone_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/layout_small_margin"
+                    android:backgroundTint="@color/navigation_buttons_violet"
+                    android:ems="10"
+                    android:hint="@string/phone_number_hint"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:nextFocusDown="@+id/register_street"
+                    android:textColor="@color/text_black"
+                    android:textColorHint="@color/text_medium_grey"
+                    android:textSize="@dimen/medium_layout_textSize" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/layout_large_margin"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <EditText
+                        android:id="@+id/register_street"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/layout_small_margin"
+                        android:layout_weight="1.5"
+                        android:backgroundTint="@color/navigation_buttons_violet"
+                        android:ellipsize="end"
+                        android:ems="10"
+                        android:hint="@string/street_hint"
+                        android:inputType="textCapWords"
+                        android:nextFocusDown="@+id/register_street_number"
+                        android:textColor="@color/text_black"
+                        android:textColorHint="@color/text_medium_grey"
+                        android:textSize="@dimen/medium_layout_textSize" />
+
+                    <EditText
+                        android:id="@+id/register_street_number"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/layout_small_margin"
+                        android:layout_weight="0.5"
+                        android:backgroundTint="@color/navigation_buttons_violet"
+                        android:ellipsize="end"
+                        android:ems="10"
+                        android:maxLength="5"
+                        android:hint="@string/street_number_hint"
+                        android:inputType="number"
+                        android:nextFocusDown="@+id/register_city"
+                        android:textColor="@color/text_black"
+                        android:textColorHint="@color/text_medium_grey"
+                        android:textSize="@dimen/medium_layout_textSize" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <EditText
+                        android:id="@+id/register_city"
+                        android:layout_width="0dp"
+                       android:layout_weight="1.5"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/layout_small_margin"
+                        android:backgroundTint="@color/navigation_buttons_violet"
+                        android:ems="10"
+                        android:maxLength="163"
+                        android:ellipsize="end"
+                        android:hint="@string/city_hint"
+                        android:inputType="textCapWords"
+                        android:nextFocusDown="@+id/zipID"
+                        android:textColor="@color/text_black"
+                        android:textColorHint="@color/text_medium_grey"
+                        android:textSize="@dimen/medium_layout_textSize" />
+
+                    <EditText
+                        android:id="@+id/zipID"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:layout_marginTop="@dimen/layout_small_margin"
+                        android:backgroundTint="@color/navigation_buttons_violet"
+                        android:ems="10"
+                        android:maxLength="10"
+                        android:hint="@string/zip_hint"
+                        android:inputType="textPostalAddress"
+                        android:nextFocusDown="@+id/register_district"
+                        android:textColor="@color/text_black"
+                        android:textColorHint="@color/text_medium_grey"
+                        android:textSize="@dimen/medium_layout_textSize" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <EditText
+                        android:id="@+id/register_district"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/layout_small_margin"
+                        android:backgroundTint="@color/navigation_buttons_violet"
+                        android:ems="10"
+                        android:hint="@string/district_hint"
+                        android:inputType="textCapWords"
+                        android:nextFocusDown="@+id/register_country"
+                        android:textColor="@color/text_black"
+                        android:textColorHint="@color/text_medium_grey"
+                        android:textSize="@dimen/medium_layout_textSize" />
+
+                    <EditText
+                        android:id="@+id/register_country"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/layout_small_margin"
+                        android:backgroundTint="@color/navigation_buttons_violet"
+                        android:ems="10"
+                        android:maxLength="70"
+                        android:hint="@string/country_hint"
+                        android:inputType="textCapWords"
+                        android:nextFocusDown="@+id/register_password"
+                        android:textColor="@color/text_black"
+                        android:textColorHint="@color/text_medium_grey"
+                        android:textSize="@dimen/medium_layout_textSize" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/register_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/layout_large_margin"
+                    android:backgroundTint="@color/navigation_buttons_violet"
+                    android:ems="10"
+                    android:hint="@string/password_hint"
+                    android:inputType="textPassword"
+                    android:nextFocusDown="@+id/register_confirm_password"
+                    android:textColor="@color/text_black"
+                    android:textColorHint="@color/text_medium_grey"
+                    android:textSize="@dimen/medium_layout_textSize" />
+
+                <EditText
+                    android:id="@+id/register_confirm_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/layout_small_margin"
+                    android:backgroundTint="@color/navigation_buttons_violet"
+                    android:ems="10"
+                    android:hint="@string/confirm_password_hint"
+                    android:inputType="textPassword"
+                    android:nextFocusDown="@+id/register_terms_checkBox"
+                    android:textColor="@color/text_black"
+                    android:textColorHint="@color/text_medium_grey"
+                    android:textSize="@dimen/medium_layout_textSize"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:id="@+id/register_terms_checkBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="@dimen/layout_small_margin"
+                        android:checked="false"
+                        android:button="@drawable/register_checkbox_selector"/>
+
+                    <TextView
+                        android:id="@+id/terms_and_conditions_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_toEndOf="@+id/register_terms_checkBox"
+                        android:layout_toRightOf="@+id/register_terms_checkBox"
+                        android:layout_centerVertical="true"
+                        android:text="@string/accept_terms_and_conditions_string"
+                        android:textColor="@color/text_medium_grey" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/register_button"
+        style="?attr/buttonBarButtonStyle"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/button_large_margin"
+        android:layout_marginRight="@dimen/button_large_margin"
+        android:layout_marginBottom="@dimen/button_large_margin"
+        android:background="@drawable/purple_button_selector"
+        android:text="@string/register"
+        android:textAllCaps="false"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/medium_layout_textSize"
+        android:textStyle="bold"/>
+
+
+</RelativeLayout>
+

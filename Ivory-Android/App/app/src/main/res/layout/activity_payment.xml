@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~  Copyright © 2018-present, MNK Group. All rights reserved.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_fc_grey"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    tools:context="com.themedimension.ivoryshop.android.activities.checkout.FinalPaymentActivity">
+
+    <include
+        android:id="@+id/payment_toolbar"
+        layout="@layout/toolbar_cart_activity" />
+
+    <TextView
+        android:id="@+id/payment_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/payment_toolbar"
+        android:layout_marginBottom="@dimen/small_layout_textSize"
+        android:layout_marginEnd="@dimen/layout_large_margin"
+        android:layout_marginLeft="@dimen/layout_large_margin"
+        android:layout_marginRight="@dimen/large_layout_textSize"
+        android:layout_marginStart="@dimen/layout_large_margin"
+        android:layout_marginTop="@dimen/layout_small_margin"
+        android:text="@string/payment_title"
+        android:textColor="@color/material_drawer_primary_icon"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/credit_card_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/payment_title"
+        android:background="@color/background_white"
+        android:orientation="vertical"
+        android:padding="@dimen/layout_large_margin"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/card_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1.1"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/payment_card_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_toLeftOf="@+id/payment_csv"
+                    android:layout_toStartOf="@+id/payment_csv"
+                    android:backgroundTint="@color/black"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:hint="@string/card_nr_hint"
+                    android:inputType="number"
+                    android:maxLength="16"
+                    android:nextFocusDown="@+id/payment_csv"
+                    android:textColor="@color/text_black"
+                    android:textColorHint="@color/text_medium_grey"
+                    android:textSize="@dimen/medium_layout_textSize" />
+
+                <EditText
+                    android:id="@+id/payment_csv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:backgroundTint="@color/black"
+                    android:ellipsize="end"
+                    android:hint="@string/csv_hint"
+                    android:maxLines="1"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:nextFocusDown="@+id/date"
+                    android:textColor="@color/text_black"
+                    android:textColorHint="@color/text_medium_grey"
+                    android:textSize="@dimen/medium_layout_textSize" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginStart="4dp"
+                android:layout_weight="0.9">
+
+                <TextView
+                    android:id="@+id/exp_date_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/exp_date"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/small_layout_textSize" />
+
+                <EditText
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_toEndOf="@+id/exp_date_label"
+                    android:layout_toLeftOf="@+id/payment_calendar_icon"
+                    android:layout_toRightOf="@+id/exp_date_label"
+                    android:layout_toStartOf="@+id/payment_calendar_icon"
+                    android:backgroundTint="@color/black"
+                    android:gravity="center_horizontal"
+                    android:hint="@string/mm_yy"
+                    android:maxLines="1"
+                    android:inputType="date"
+                    android:nextFocusDown="@+id/settings_card_holder_name"
+                    android:textColor="@color/text_black"
+                    android:textColorHint="@color/text_medium_grey"
+                    android:textSize="@dimen/medium_layout_textSize" />
+
+                <ImageButton
+                    android:id="@+id/payment_calendar_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ic_date_black"
+                    android:contentDescription="@null" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <com.stripe.android.view.CardInputWidget
+            android:id="@+id/cardInputWidget"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:background="@drawable/stripe_widget_background"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            cardTextErrorColor="@color/red"
+            android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/payment_card_holder_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_small_margin"
+            android:backgroundTint="@color/black"
+            android:layout_below="@+id/layout"
+            android:hint="@string/card_holder_name"
+            android:inputType="textCapWords"
+            android:nextFocusDown="@+id/payment_checkBox"
+            android:textColor="@color/text_black"
+            android:textColorHint="@color/text_medium_grey"
+            android:textSize="@dimen/medium_layout_textSize" />
+
+        <View
+            android:id="@+id/card_layout_blocking_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/layout"
+            android:layout_alignBottom="@+id/payment_card_holder_name"
+            android:background="@color/text_white"
+            android:clickable="true"
+            android:alpha="0.4"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <CheckBox
+        android:id="@+id/payment_checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/credit_card_layout"
+        android:layout_margin="@dimen/layout_large_margin"
+        android:button="@drawable/payment_checkbox_selector"
+        android:nextFocusDown="@+id/place_order"
+        android:text="@string/i_d_like_to_pay_on_delivery"
+        android:textColor="@color/text_black" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/background_white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/layout_small_margin"
+        android:paddingLeft="@dimen/layout_large_margin"
+        android:paddingRight="@dimen/layout_large_margin"
+        android:paddingTop="@dimen/layout_small_margin">
+
+        <Button
+            android:id="@+id/pay_with_payPal"
+            style="?attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/layout_small_margin"
+            android:background="@drawable/green_button_selector"
+            android:text="@string/pay_with_paypal"
+            android:textAllCaps="false"
+            android:textColor="@color/text_white"
+            android:visibility="visible" />
+
+        <View
+            android:id="@+id/pay_with_paypal_blocking_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/pay_with_payPal"
+            android:layout_alignBottom="@id/pay_with_payPal"
+            android:alpha="0.4"
+            android:background="@color/background_white"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/place_order"
+            android:layout_below="@+id/pay_with_payPal"
+            style="?attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_white"
+            android:background="@drawable/green_button_selector"
+            android:text="@string/place_order"
+            android:textAllCaps="false" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

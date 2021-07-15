@@ -1,0 +1,623 @@
+{
+  "productList":
+          [
+            {
+              "productName":"WomenClothes",
+              "productId":1,
+              "productColor":"#00aabb",
+              "productPrice":20,
+              "sizes":
+                      [
+                        {
+                          "id":1,
+                          "name":"XS",
+                          "quantity":0
+                        },
+
+                        {
+                          "id":2,
+                          "name":"S",
+                          "quantity":10
+                        },
+
+                        {
+                          "id":3,
+                          "name":"M",
+                          "quantity":25
+                        },
+
+                        {
+                          "id":4,
+                          "name":"L",
+                          "quantity":15
+                        },
+
+                        {
+                          "id":5,
+                          "name":"XL",
+                          "quantity":25
+                        },
+
+                        {
+                          "id":6,
+                          "name":"XXL",
+                          "quantity":25
+                        }
+                      ],
+              "productAddedDate":"05-11-2015",
+              "productGender":"Women",
+              "productCategory":"Clothes",
+              "productImage":"blouse_blue.png"
+            },
+
+            {
+              "productName":"WomenClothes",
+              "productId":2,
+              "productColor":"#C48B30",
+              "productPrice":20.99,
+              "sizes":
+              [
+                {
+                  "id":7,
+                  "name":"XS",
+                  "quantity":1
+                },
+
+                {
+                  "id":8,
+                  "name":"S",
+                  "quantity":11
+                },
+
+                {
+                  "id":9,
+                  "name":"M",
+                  "quantity":28
+                },
+
+                {
+                  "id":10,
+                  "name":"L",
+                  "quantity":3
+                },
+
+                {
+                  "id":11,
+                  "name":"XL",
+                  "quantity":65
+                },
+
+                {
+                  "id":12,
+                  "name":"XXL",
+                  "quantity":5
+                }
+              ],
+              "productAddedDate":"05-12-2015",
+              "productGender":"Women",
+              "productCategory":"Clothes",
+              "productImage":"blouse_red.png"
+            },
+
+            {
+              "productName":"WomenClothes",
+              "productId":3,
+              "productColor":"#46C430",
+              "productPrice":5.99,
+              "sizes":
+                      [
+                        {
+                          "id":13,
+                          "name":"XS",
+                          "quantity":7
+                        },
+
+                        {
+                          "id":14,
+                          "name":"S",
+                          "quantity":56
+                        },
+
+                        {
+                          "id":18,
+                          "name":"XXL",
+                          "quantity":0
+                        }
+                      ],
+              "productAddedDate":"05-13-2015",
+              "productGender":"Women",
+              "productCategory":"Clothes",
+              "productImage":"blouse_green.png"
+            },
+            {
+              "productName":"WomenClothes",
+              "productId":4,
+              "productColor":"#308AC4",
+              "productPrice":34,
+              "sizes":
+                      [
+                        {
+                          "id":19,
+                          "name":"XS",
+                          "quantity":7
+                        },
+
+                        {
+                          "id":20,
+                          "name":"S",
+                          "quantity":12
+                        },
+
+                        {
+                          "id":21,
+                          "name":"M",
+                          "quantity":4
+                        },
+
+                        {
+                          "id":22,
+                          "name":"L",
+                          "quantity":5
+                        },
+
+
+                        {
+                          "id":24,
+                          "name":"XXL",
+                          "quantity":45
+                        }
+                      ],
+              "productAddedDate":"05-14-2015",
+              "productGender":"Women",
+              "productCategory":"Clothes",
+              "productImage":"blouse_pink.png"
+            },
+            {
+              "productName":"WomenClothes",
+              "productId":5,
+              "productColor":"#5430C4",
+              "productPrice":4.99,
+              "sizes":
+                      [
+                        {
+                          "id":25,
+                          "name":"XS",
+                          "quantity":55
+                        },
+
+                        {
+                          "id":27,
+                          "name":"M",
+                          "quantity":1
+                        },
+
+                        {
+                          "id":28,
+                          "name":"L",
+                          "quantity":0
+                        },
+
+                        {
+                          "id":29,
+                          "name":"XL",
+                          "quantity":67
+                        },
+
+                        {
+                          "id":30,
+                          "name":"XXL",
+                          "quantity":33
+                        }
+                      ],
+              "productAddedDate":"05-15-2015",
+              "productGender":"Women",
+              "productCategory":"Clothes",
+              "productImage":"blouse_pink.png"
+            },
+
+            {
+              "productName":"MenShoes",
+              "productId":6,
+              "productColor":"#7DC7EA",
+              "productPrice":30.50,
+              "sizes":
+                      [
+                        {
+                          "id":31,
+                          "name":"35",
+                          "quantity":8
+                        },
+
+                        {
+                          "id":32,
+                          "name":"36",
+                          "quantity":44
+                        },
+
+                        {
+                          "id":33,
+                          "name":"37.5",
+                          "quantity":3
+                        },
+
+                        {
+                          "id":34,
+                          "name":"38",
+                          "quantity":2
+                        },
+
+                        {
+                          "id":35,
+                          "name":"40",
+                          "quantity":44
+                        },
+
+                        {
+                          "id":36,
+                          "name":"40.5",
+                          "quantity":0
+                        }
+                      ],
+              "productAddedDate":"05-16-2015",
+              "productGender":"Men",
+              "productCategory":"Shoes",
+              "productImage":"shoes_blue.png"
+            },
+            {
+              "productName":"KidsShoes",
+              "productId":7,
+              "productColor":"#CD3222",
+              "productPrice":100,
+              "sizes":
+                      [
+                        {
+                          "id":37,
+                          "name":"33",
+                          "quantity":0
+                        },
+
+                        {
+                          "id":38,
+                          "name":"34",
+                          "quantity":10
+                        },
+
+                        {
+                          "id":39,
+                          "name":"35",
+                          "quantity":25
+                        },
+
+                        {
+                          "id":40,
+                          "name":"36",
+                          "quantity":15
+                        },
+
+                        {
+                          "id":41,
+                          "name":"36.5",
+                          "quantity":25
+                        },
+
+                        {
+                          "id":42,
+                          "name":"38",
+                          "quantity":25
+                        }
+                      ],
+              "productAddedDate":"05-17-2015",
+              "productGender":"Kids",
+              "productCategory":"Shoes",
+              "productImage":"shoes_green.png"
+            },
+            {
+              "productName":"WomenShoes",
+              "productId":8,
+              "productColor":"#22CD94",
+              "productPrice":300.99,
+              "sizes":
+                      [
+                        {
+                          "id":43,
+                          "name":"37",
+                          "quantity":55
+                        },
+
+                        {
+                          "id":44,
+                          "name":"37.5",
+                          "quantity":56
+                        },
+
+                        {
+                          "id":45,
+                          "name":"38",
+                          "quantity":87
+                        },
+
+                        {
+                          "id":46,
+                          "name":"38.5",
+                          "quantity":23
+                        },
+
+                        {
+                          "id":47,
+                          "name":"39",
+                          "quantity":44
+                        },
+
+                        {
+                          "id":48,
+                          "name":"39.5",
+                          "quantity":76
+                        }
+                      ],
+              "productAddedDate":"05-18-2015",
+              "productGender":"Women",
+              "productCategory":"Shoes",
+              "productImage":"shoes_green.png"
+            },
+            {
+              "productName":"WomenShoes",
+              "productId":9,
+              "productColor":"#CDCD22",
+              "productPrice":13.99,
+              "sizes":
+                      [
+                        {
+                          "id":49,
+                          "name":"32",
+                          "quantity":66
+                        },
+
+                        {
+                          "id":50,
+                          "name":"33",
+                          "quantity":4
+                        },
+
+                        {
+                          "id":51,
+                          "name":"34",
+                          "quantity":32
+                        },
+
+                        {
+                          "id":52,
+                          "name":"35",
+                          "quantity":0
+                        },
+
+                        {
+                          "id":53,
+                          "name":"36",
+                          "quantity":1
+                        }
+
+                      ],
+              "productAddedDate":"05-19-2015",
+              "productGender":"Women",
+              "productCategory":"Shoes",
+              "productImage":"shoes_purple.png"
+            },
+
+            {
+              "productName":"MenShoes",
+              "productId":10,
+              "productColor":"#CD2263",
+              "productPrice":33.99,
+              "sizes":
+                      [
+                        {
+                          "id":55,
+                          "name":"36",
+                          "quantity":0
+                        },
+
+                        {
+                          "id":56,
+                          "name":"36.5",
+                          "quantity":10
+                        },
+
+                        {
+                          "id":57,
+                          "name":"37",
+                          "quantity":25
+                        },
+
+                        {
+                          "id":58,
+                          "name":"37.5",
+                          "quantity":15
+                        }
+
+                      ],
+              "productAddedDate":"05-20-2015",
+              "productGender":"Men",
+              "productCategory":"Shoes",
+              "productImage":"shoes_black.png"
+            },
+
+            {
+              "productName":"KidsOther",
+              "productId":11,
+              "productColor":"#CD8D22",
+              "productPrice":4.99,
+              "sizes":
+                      [
+
+                        {
+                          "id":62,
+                          "name":"S",
+                          "quantity":100
+                        },
+
+                        {
+                          "id":63,
+                          "name":"M",
+                          "quantity":67
+                        },
+
+                        {
+                          "id":64,
+                          "name":"L",
+                          "quantity":44
+                        }
+
+                      ],
+              "productAddedDate":"05-21-2015",
+              "productGender":"Kids",
+              "productCategory":"Other",
+              "productImage":"hat_orange.png"
+            },
+
+            {
+              "productName":"KidsOther",
+              "productId":12,
+              "productColor":"#229FCD",
+              "productPrice":6.99,
+              "sizes":
+                      [
+                        {
+                          "id":67,
+                          "name":"XS",
+                          "quantity":0
+                        },
+
+                        {
+                          "id":68,
+                          "name":"S",
+                          "quantity":6
+                        },
+
+                        {
+                          "id":69,
+                          "name":"M",
+                          "quantity":5
+                        },
+
+                        {
+                          "id":70,
+                          "name":"L",
+                          "quantity":9
+                        }
+
+
+                      ],
+              "productAddedDate":"05-22-2015",
+              "productGender":"Kids",
+              "productCategory":"Other",
+              "productImage":"hat_purple.png"
+            },
+
+            {
+              "productName":"WomenOther",
+              "productId":13,
+              "productColor":"#2D22CD",
+              "productPrice":1.99,
+              "sizes":
+                      [
+
+                        {
+                          "id":75,
+                          "name":"M",
+                          "quantity":5
+                        },
+
+                        {
+                          "id":76,
+                          "name":"L",
+                          "quantity":65
+                        }
+
+                      ],
+              "productAddedDate":"05-23-2015",
+              "productGender":"Women",
+              "productCategory":"Other",
+              "productImage":"hat_blue.png"
+            },
+
+            {
+              "productName":"KidsOther",
+              "productId":14,
+              "productColor":"#22CD94",
+              "productPrice":10,
+              "sizes":
+                      [
+                        {
+                          "id":79,
+                          "name":"XS",
+                          "quantity":56
+                        },
+
+                        {
+                          "id":80,
+                          "name":"S",
+                          "quantity":12
+                        },
+
+                        {
+                          "id":81,
+                          "name":"M",
+                          "quantity":97
+                        },
+
+                        {
+                          "id":82,
+                          "name":"L",
+                          "quantity":6
+                        }
+                      ],
+              "productAddedDate":"05-24-2015",
+              "productGender":"Kids",
+              "productCategory":"Other",
+              "productImage":"hat_green.png"
+            },
+
+            {
+              "productName":"WomenOther",
+              "productId":15,
+              "productColor":"#8D22CD",
+              "productPrice":44.99,
+              "sizes":
+                      [
+                        {
+                          "id":85,
+                          "name":"XS",
+                          "quantity":66
+                        },
+
+                        {
+                          "id":86,
+                          "name":"S",
+                          "quantity":0
+                        },
+
+                        {
+                          "id":87,
+                          "name":"M",
+                          "quantity":33
+                        },
+
+                        {
+                          "id":88,
+                          "name":"L",
+                          "quantity":37
+                        },
+
+                        {
+                          "id":89,
+                          "name":"XL",
+                          "quantity":8
+                        }
+                      ],
+              "productAddedDate":"05-25-2015",
+              "productGender":"Women",
+              "productCategory":"Other",
+              "productImage":"hat_orange.png"
+            }
+          ]
+}

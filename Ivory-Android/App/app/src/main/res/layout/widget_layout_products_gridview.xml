@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~  Copyright © 2018-present, MNK Group. All rights reserved.
+  -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/grid_view_items"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/layout_large_margin"
+    android:background="@color/background_white"
+    android:elevation="10dp">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorGreen"
+        android:layout_marginBottom="@dimen/layout_small_margin"/>
+
+    <ImageView
+        android:id="@+id/productImage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/widget_productList_mainGridview_productImage_height"
+        android:background="#ffffffff"
+        android:contentDescription="@null"
+        android:padding="5dp"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/productName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_white"
+        android:layout_marginBottom="@dimen/layout_small_margin"
+        android:layout_marginTop="@dimen/layout_small_margin"
+        android:paddingEnd="@dimen/widget_productList_mainGridview_productName_marginEnd"
+        android:paddingLeft="@dimen/widget_productList_mainGridview_productName_marginLeft"
+        android:paddingRight="@dimen/widget_productList_mainGridview_productName_marginRight"
+        android:paddingStart="@dimen/widget_productList_mainGridview_productName_marginStart"
+        android:text="@string/grid_view_items_textview_product_name"
+        android:textColor="@color/black"
+        android:textSize="14sp"/>
+
+    <LinearLayout
+        android:id="@+id/detailsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_white"
+        android:paddingBottom="@dimen/widget_productList_mainGridview_linear_padingBottom"
+        android:paddingEnd="@dimen/widget_productList_mainGridview_productPrice_paddingEnd"
+        android:paddingLeft="@dimen/widget_productList_mainGridview_productPrice_paddingLeft"
+        android:paddingRight="@dimen/widget_productList_mainGridview_productPrice_paddingRight"
+        android:paddingStart="@dimen/widget_productList_mainGridview_productPrice_paddingStart"
+        android:weightSum="4">
+
+        <TextView
+            android:id="@+id/productPrice"
+            android:layout_width="@dimen/widget_productList_mainGridview_productPrice_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:text="@string/grid_view_items_textview_product_price"
+            android:textColor="@color/background_e8_grey" />
+
+        <ImageView
+            android:id="@+id/favorite"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_weight="0.5"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_favorite_grey" />
+
+        <ImageView
+            android:id="@+id/cart"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_weight="0.5"
+            android:layout_marginStart="@dimen/layout_small_margin"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_shopping_cart_black" />
+    </LinearLayout>
+</LinearLayout>
